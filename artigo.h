@@ -43,6 +43,14 @@ typedef struct {
     char tipoArtigo[MAX_TIPO_ARTIGO];
 } Artigo;
 
+/**
+Estrutura Artigos
+    int ContadorArtigos - Contador de artigos
+    int *ContadorArtigos2 - Contador de artigos
+    int tamanho - 
+    int tam2 - 
+    Artigo *artigos - 
+**/
 typedef struct {
     int ContadorArtigos, *ContadorArtigos2;
     int tamanho;
@@ -50,6 +58,13 @@ typedef struct {
     Artigo *artigos;
 } Artigos;
 
+/**
+ * Carrega os artigos do ficheiro
+ * @param Artigos *artigos - Apontador para o artigo
+ * @param ficheiro - Apontador para o ficheiro
+ * @return 1 Sucesso
+ * @return 0 Insucesso
+ */
 int carregarArtigos(Artigos *artigos, char* ficheiro);
 void editarArtigos(Artigos *artigos, char *ficheiro);
 void removerArtigos(Artigos *artigos, char *ficheiro);
